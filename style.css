@@ -1,0 +1,178 @@
+body {
+    background-image: url(tiramisu.jpeg);
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+:root {
+    --color-principal: #c0392b;     /* Cabecera y botones */
+    --color-secundario: #faf6f2;    /* Fondo general */
+    --color-acento: #e67e22;        /* Hover o detalles */
+    --color-texto: #2c3e50;         /* Texto */
+}
+header, footer {
+    background-color: var(--color-principal);
+    color: white;
+}
+button {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover, nav a:hover, footer a:hover {
+    background-color: var(--color-acento);
+    color: white;
+}
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 16, 16);
+    color:rgb(255, 255, 255);
+    padding: 15px 50px;
+}
+.logo{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        padding: 10px 20px;
+        height:80px;
+        background: none;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+nav a.activo {
+    text-decoration: underline;
+}
+nav a:hover {
+    color: #ffe4e1;
+}
+.presentacion{
+    text-align: center;
+    padding: 60px 20px;
+}
+.presentacion h1{
+    font-size: 51px;
+    font-family: "Arial" serif;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.presentacion p{
+    font-size: 20px;
+    font-family: "Arial" serif;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.presentacion img{
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgb(37, 28, 28);
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+.tarjeta{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgb(37, 28, 28);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+
+.tarjeta:hover{
+    transform: scale(1.05);
+}
+.tarjeta img{
+    width: 100px;
+    border-radius: 10px;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+}
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: bakcground-color 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #b52b27;
+    transform: scale(1.05);
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+footer a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    background-color: var(--color-acento);
+    border-radius: 5px;
+}
+nav a.activo {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
